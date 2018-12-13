@@ -7,7 +7,7 @@ namespace TCPClient
         
         static void Main(string[] args)
         {
-           TCPClient piClient = new TCPClient();
+           TcpServer piServer = new TcpServer.TcpServer();
            
            piClient.Start();
 
