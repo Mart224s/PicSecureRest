@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicSecureRest", "PicSecureRest\PicSecureRest.csproj", "{AEEF0027-D665-44B1-9FA0-6A9E155F81C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpProxy", "TcpProxy\TcpProxy.csproj", "{7FC4C3BA-DCE1-4BFC-82F2-598854F2570E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImgLib", "ImgLib\ImgLib.csproj", "{49FD54DE-817A-48E0-A811-9E87CE1905F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{AEEF0027-D665-44B1-9FA0-6A9E155F81C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEEF0027-D665-44B1-9FA0-6A9E155F81C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEEF0027-D665-44B1-9FA0-6A9E155F81C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FC4C3BA-DCE1-4BFC-82F2-598854F2570E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC4C3BA-DCE1-4BFC-82F2-598854F2570E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC4C3BA-DCE1-4BFC-82F2-598854F2570E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC4C3BA-DCE1-4BFC-82F2-598854F2570E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49FD54DE-817A-48E0-A811-9E87CE1905F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49FD54DE-817A-48E0-A811-9E87CE1905F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49FD54DE-817A-48E0-A811-9E87CE1905F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49FD54DE-817A-48E0-A811-9E87CE1905F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

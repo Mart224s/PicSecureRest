@@ -3,17 +3,18 @@ using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading.Tasks;
+using ImgLib;
 
 namespace PlainServer
 {
-    internal class Server
+    internal class ServerTcp
     {
         private int PORT;
 
         // integer der bruges til id på billeder der modtages
         private static int filenNum = 0;
 
-        public Server(int port)
+        public ServerTcp(int port)
         {
             this.PORT = port;
         }
@@ -47,6 +48,8 @@ namespace PlainServer
                     @"C:\Users\mahdi\Sync\DATAMATIKER\3 Semester\3SemesterPROJEKT\PicSecureRest\imgFiles\imgFile" +
                     filenNum++ + ".jpg"));
 
+            ImgModel img = new ImgModel();
+
             int count;
 
             // Buffer til at modtage billeder. Et array af bytes, der kan tage 2048 bytes af gangen
@@ -59,8 +62,9 @@ namespace PlainServer
 
                 // Variabel af Filestream, skriver bytes ud, så man ender med at have et billede. 
                 fs.Write(imgBuffer, 0, count);
-            }
 
+                
+            }
             fs.Close();
         }
     }

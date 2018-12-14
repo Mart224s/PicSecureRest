@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using ImgLib;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,8 +29,10 @@ namespace PicSecureRest.Controllers
 
         // POST: api/Image
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] FileStream file)
         {
+           
+
         }
 
         // PUT: api/Image/5
