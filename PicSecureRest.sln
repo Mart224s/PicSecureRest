@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicSecureRest", "PicSecureRest\PicSecureRest.csproj", "{AEEF0027-D665-44B1-9FA0-6A9E155F81C6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TcpServer", "TcpServer\TcpServer.csproj", "{68564E5F-BBC3-4EFA-8A93-809F824C7937}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{AEEF0027-D665-44B1-9FA0-6A9E155F81C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEEF0027-D665-44B1-9FA0-6A9E155F81C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEEF0027-D665-44B1-9FA0-6A9E155F81C6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{68564E5F-BBC3-4EFA-8A93-809F824C7937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68564E5F-BBC3-4EFA-8A93-809F824C7937}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68564E5F-BBC3-4EFA-8A93-809F824C7937}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68564E5F-BBC3-4EFA-8A93-809F824C7937}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

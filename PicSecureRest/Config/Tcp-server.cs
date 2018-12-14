@@ -11,7 +11,7 @@ namespace PlainServer
         private int PORT;
 
         // integer der bruges til id på billeder der modtages
-        private static int filenum = 0;
+        private static int filenNum = 0;
 
         public Server(int port)
         {
@@ -38,18 +38,29 @@ namespace PlainServer
 
         private void DoClient(TcpClient socket)
         {
+            //Starter et stream på det givne netværk
             NetworkStream clientStream = socket.GetStream();
-            FileStream fs = (File.Create(@"C:\Users\mahdi\Sync\DATAMATIKER\3 Semester\3SemesterPROJEKT\PicSecureRest\imgFiles\imgFile" + filenum++ + ".jpg"));
+
+            // Filestream der laver en ny film på den angivet sti
+            FileStream fs =
+                (File.Create(
+                    @"C:\Users\mahdi\Sync\DATAMATIKER\3 Semester\3SemesterPROJEKT\PicSecureRest\imgFiles\imgFile" +
+                    filenNum++ + ".jpg"));
 
             int count;
-            byte[] imgBytes = new byte[2048];
+
+            // Buffer til at modtage billeder. Et array af bytes, der kan tage 2048 bytes af gangen
+            byte[] imgBuffer = new byte[2048];
 
             while (socket.Connected)
             {
-                count = clientStream.Read(imgBytes, 0, 2000);
+                // variabel der tæller antal bytes. Tager b.la. buffer som parameter
+                count = clientStream.Read(imgBuffer, 0, 2000);
 
-                fs.Write(imgBytes, 0, count);
+                // Variabel af Filestream, skriver bytes ud, så man ender med at have et billede. 
+                fs.Write(imgBuffer, 0, count);
             }
+
             fs.Close();
         }
     }
