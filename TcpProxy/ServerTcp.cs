@@ -48,8 +48,6 @@ namespace PlainServer
                     @"C:\Users\mahdi\Sync\DATAMATIKER\3 Semester\3SemesterPROJEKT\PicSecureRest\imgFiles\imgFile" +
                     filenNum++ + ".jpg"));
 
-            ImgModel img = new ImgModel();
-
             int count;
 
             // Buffer til at modtage billeder. Et array af bytes, der kan tage 2048 bytes af gangen
@@ -61,9 +59,7 @@ namespace PlainServer
                 count = clientStream.Read(imgBuffer, 0, 2000);
 
                 // Variabel af Filestream, skriver bytes ud, så man ender med at have et billede. 
-                fs.Write(imgBuffer, 0, count);
-
-                
+                fs.Write(imgBuffer, 0, count);              
             }
             fs.Close();
         }
